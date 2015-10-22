@@ -10,12 +10,18 @@
 
 <body>
 	<h2>CLICK ON THE SQUARE TO MAKE IT GO CRAZY!</h2>
-	<div class="location">Square Coordinates:
+	<div class="location">Get Square Coordinates:
 		<div id="top">Top: <span>0</span></div>
 		<div id="left">Left: <span>0</span></div>
 	</div>
-	<div class="Details">Details</div>
 	<span class="col"></span>
+	<div class="details">
+		<h4>Details</h4>
+		<p>This page utilizes two instances of the jQuery function '.offset()'.
+		When placed after a selector .offset() will return the distance (in number of pixels) that the element is from the top and from the left of the page. In this case the selected element is the grey box, and the location values are being passed into the locator box in the top left of the page.
+		If .offset() is called with values inside of it the element will be moved to the position of those values. This script calls two random values into offset everytime the box is clicked, thus randomizing the box's position.
+	</p>
+</div>
 </body>
 
 </html>

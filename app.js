@@ -1,5 +1,10 @@
 $(document).ready(function(){
 	var $box = $('.col')
+
+	$(".details").children('p').hide();
+	$(".details").on('click','h4',function(){
+		$('p').slideToggle();
+	});
 	$("body").on('click','.location', function(){
 		$('#top').children('span').text(($box.offset().top).toFixed(2));
 		$('#left').children('span').text(($box.offset().left).toFixed(2));

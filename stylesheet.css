@@ -41,3 +41,8 @@ h2{
 	background-color: darkgrey;
 }
 
+.details {
+	position: relative;
+	top: 145px;
+}
+
