@@ -5,9 +5,9 @@ $(document).ready(function(){
 		$('#left').children('span').text(($box.offset().left).toFixed(2));
 		console.log("this works")
 	});
-	//$("body").on('click',function(){
-
-	//})
+	$("body").on('click',function(){
+		$('.col').offset({top:randomizer(5,142),left:randomizer(5,883)})
+	})
 })
 
 function randomizer(min,max){
